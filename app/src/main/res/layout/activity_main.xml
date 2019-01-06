@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityA">
+
+    <FrameLayout
+            android:id="@+id/dependent_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/open_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Next Activity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
